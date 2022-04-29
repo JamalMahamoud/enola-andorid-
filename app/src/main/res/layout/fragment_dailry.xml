@@ -1,0 +1,127 @@
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    >
+
+
+
+    <TextView
+        android:id="@+id/diary_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="My Entries"
+        android:textAppearance="@style/h3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardElevation="16dp"
+        app:cardCornerRadius="8dp"
+        app:cardBackgroundColor="@color/background"
+        app:layout_constraintTop_toBottomOf="@id/diary_title"
+        >
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <TextView
+
+                    android:id="@+id/book_for_st"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="19dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="42dp"
+                    android:text="@string/write_about_the_things_you_like_and_didn_t_like"
+                    android:textAppearance="@style/h6"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/book_for_st1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/book_for_st"
+                    android:layout_marginStart="19dp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Start your journal entry with how you are feeling right now, for example"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/book_for_st2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/book_for_st"
+                    android:layout_marginStart="19dp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="20dp"
+                    android:text="I feel ____ - Write down what did not go well today and how it made you feel, for example:"
+                    android:textColor="@color/black" />
+
+
+                <TextView
+                    android:id="@+id/book_for_st3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/book_for_st"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="19dp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="20dp"
+                    android:text=" happy, sad, frustrated, proud"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="10dp"/>
+
+            </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="16dp"
+        android:clickable="true"
+        android:src="@drawable/ic_baseline_add_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_diary"
+        android:layout_width="410dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardview1"
+        app:layout_constraintVertical_bias="0.0"
+        tools:listitem="@layout/dairy_list" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

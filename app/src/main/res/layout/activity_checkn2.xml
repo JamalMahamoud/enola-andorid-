@@ -1,0 +1,118 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/yellow"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/checkin2_greetings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+      android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Hello Jamal!"
+        android:textAppearance="@style/h2" />
+
+    <ImageView
+        android:id="@+id/checking_emotion_img"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_below="@id/checkin2_greetings"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/happyimg" />
+
+
+    <TextView
+        android:id="@+id/text_view_how_are_you"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checking_emotion_img"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/how_are_you"
+        android:textAppearance="@style/h2" />
+
+    <RelativeLayout
+        android:id="@+id/slider_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view_how_are_you"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp">
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/slider"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="20dp"
+            android:value="1"
+            android:valueFrom="1"
+            android:valueTo="10"
+            android:visibility="visible"
+            app:haloColor="@color/cream"
+            app:labelBehavior="gone"
+            app:thumbColor="@color/blue2"
+            app:thumbRadius="20dp"
+            app:trackColor="@color/cream"
+            app:trackColorActive="@color/pink" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/slider"
+            android:layout_marginStart="30dp"
+
+            android:text="Barely"
+            android:textAppearance="@style/h3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/slider"
+            android:layout_marginStart="150dp"
+            android:text="Fairly"
+            android:textAppearance="@style/h3" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/slider"
+            android:layout_marginStart="280dp"
+            android:text="Very"
+            android:textAppearance="@style/h3" />
+
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_next"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:textAppearance="@style/h4"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:background="@color/teal_700"
+
+        android:text="Next" />
+
+
+</RelativeLayout>
+

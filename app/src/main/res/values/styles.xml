@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="h1">
+        <item name="android:textSize">
+            40sp
+        </item>
+
+        <item name="android:textColor">@color/black</item>
+
+        <item name="android:fontFamily">
+            @font/montserrat_bold
+        </item>
+
+    </style>
+
+    <style name="button_text">
+
+        <item name="android:textSize">
+            24sp
+        </item>
+
+        <item name="android:textColor">
+            #FFFFFF
+        </item>
+
+    </style>
+
+    <style name="h2">
+        <item name="android:textSize">
+            24sp
+        </item>
+
+        <item name="android:textColor">@color/black</item>
+
+        <item name="android:fontFamily">
+            @font/montserrat_bold
+        </item>
+
+    </style>
+
+    <style name="h3">
+        <item name="android:textSize">
+            18sp
+        </item>
+
+        <item name="android:textColor">@color/black</item>
+
+        <item name="android:fontFamily">
+            @font/montserrat_bold
+        </item>
+
+    </style>
+
+    <style name="h4">
+        h4
+
+        <item name="android:textSize">
+            20sp
+        </item>
+
+        <item name="android:textColor">
+            #3A3A3A
+        </item>
+
+        <item name="android:fontFamily">
+            @font/montserrat_semibold
+        </item>
+
+    </style>
+
+    <style name="h6">
+        h4
+
+        <item name="android:textSize">
+            16sp
+        </item>
+
+        <item name="android:textColor">
+
+            #3A3A3A
+        </item>
+        <item name="android:fontFamily">
+            @font/montserrat_bold
+        </item>
+    </style>
+
+    <style name="h7">
+        h7
+        <item name="android:textSize">
+            12sp
+        </item>
+
+        <item name="android:textColor">
+            #B0FFFFFF
+        </item>
+
+        <item name="android:fontFamily">
+            @font/montserrat_bold
+        </item>
+
+    </style>
+
+
+    <style name="gray_out">
+       gray_out
+        <item name="android:textSize">
+            18sp
+        </item>
+
+        <item name="android:textColor">
+            #D4D4D4
+        </item>
+
+        <item name="android:fontFamily">
+            @font/montserrat_bold
+        </item>
+
+    </style>
+
+    <!-- styles.xml -->
+    <style name="today_was_v">
+
+        <item name="android:textSize">
+            18sp
+        </item>
+
+        <item name="android:textColor">
+            #FFFFFF
+        </item>
+
+        <item name="android:fontFamily">
+            @font/montserrat_bold
+        </item>
+
+    </style>
+
+
+</resources>

@@ -1,0 +1,31 @@
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <item
+        android:id="@+id/icon_home"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="@string/home" />
+
+
+    <item
+        android:id="@+id/icon_diary"
+        android:icon="@drawable/ic_diary_24"
+        android:title="@string/diary"
+        />
+
+    <item
+        android:id="@+id/icon_chick_in"
+        android:icon="@drawable/ic_baseline_mark_chat_read_24"
+        android:title="@string/chick_ins" />
+
+    <item
+        android:id="@+id/icon_alert"
+        android:icon="@drawable/ic_baseline_account_circle_24"
+        android:title="@string/Profile" />
+
+
+
+
+
+</menu>

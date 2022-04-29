@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <ImageView
+        android:id="@+id/img_Exercises_and_Goals"
+        android:layout_width="113dp"
+        android:layout_height="108dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:src="@drawable/social_icon" />
+
+
+    <TextView
+        android:id="@+id/text_view_Exercises_and_Goals_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_Exercises_and_Goals"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="5dp"
+        android:fontFamily="sans-serif-medium"
+        android:textAppearance="@style/h6"
+        tools:text="Hospitality" />
+
+
+</RelativeLayout>
+
+

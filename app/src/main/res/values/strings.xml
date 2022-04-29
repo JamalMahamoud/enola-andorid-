@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">Me</string>
+    <string name="home">Home</string>
+    <string name="Goals">Goals</string>
+    <string name="Alert">Alerts</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="we_care">Welcome to Ami, A digital friend for Your child</string>
+    <string name="we_care2">Lets Grow Together</string>
+    <string name="get_started">Get started</string>
+    <string name="already_have_account_log_in">Already Have Account LOG IN</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="enter_confirm_password">Enter Confirm Password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="enter_email">Enter email</string>
+    <string name="switch_to_child">Switch To Child</string>
+    <string name="view_child_progress">View Child Progress</string>
+    <string name="set_goals">Set Goals</string>
+    <string name="set_rewards">Set Rewards</string>
+    <string name="goals_achievement">Goals Achievement</string>
+    <string name="diary">Diary</string>
+    <string name="chick_ins">Chick-ins</string>
+    <string name="mark_as_complete">Mark as Complete</string>
+    <string name="good_morning">Good Morning</string>
+    <string name="tell_me_how_you_day_was">tell me how you day was</string>
+    <string name="how_are_you">How are you feeling today?</string>
+    <string name="title_activity_checkn2">ChecknActivity2</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="dairy_instr">Start your journal entry with how you are feeling right now, for example: I feel ____ - Write down what did not go well today and how it made you feel, for example: happy, sad, frustrated, proud</string>
+    <string name="write_about_the_things_you_like_and_didn_t_like">Write about the things you like and didn\'t like.</string>
+    <string name="Profile">Profile</string>
+    <string name="title_activity_login_parent">LoginParentActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+</resources>

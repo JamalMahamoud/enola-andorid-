@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cream"
+    tools:context=".activity.child.ExerciseslAcitvity">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/cream"
+            tools:context=".activity.parent.ChildProgressActivity"
+            >
+
+
+            <TextView
+                android:id="@+id/tv_mum_greetings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:text="Hello Jamal!"
+                android:textAppearance="@style/h3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_overview"
+                android:layout_width="match_parent"
+                android:layout_height="172dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:elevation="18dp"
+                app:cardCornerRadius="8dp"
+                app:cardMaxElevation="90dp"
+                app:layout_constraintTop_toBottomOf="@id/tv_mum_greetings">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/blue3">
+
+                    <ImageView
+                        android:id="@+id/im_progress_3d"
+                        android:layout_width="179dp"
+                        android:layout_height="148dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/taskpage_3d" />
+
+                    <TextView
+                        android:id="@+id/text_view_exercises_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:text="Today's Goal"
+                        android:textAppearance="@style/h3"
+                        android:textColor="@color/white" />
+
+                    <ImageView
+                        android:id="@+id/img_Exercises"
+                        android:layout_width="140dp"
+                        android:layout_height="120dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="40dp"
+                        android:src="@drawable/social_situation_icon" />
+
+
+                </RelativeLayout>
+                
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+            <TextView
+                android:id="@+id/num_goals"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Goals"
+                app:layout_constraintTop_toBottomOf="@id/card_overview"
+                app:layout_constraintStart_toStartOf="parent"
+                style="@style/h4"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/no_gaols_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <ImageView
+                   android:layout_gravity="center"
+                    android:layout_width="200dp"
+                    android:layout_height="180dp"
+                    android:src="@drawable/angryimg"/>
+
+                <TextView
+                    android:id="@+id/tv_no_goal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:text="Ohhh nooo we have no goals for you today come back later"
+                    style="@style/h6"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="20dp"
+                    />
+
+
+
+
+            </LinearLayout>
+
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toBottomOf="@id/num_goals"
+                android:id="@+id/recyclerview_goals"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/goal_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+</ScrollView>

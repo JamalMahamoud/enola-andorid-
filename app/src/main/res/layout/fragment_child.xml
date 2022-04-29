@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/cream"
+            tools:context=".activity.parent.ChildProgressActivity">
+
+
+            <TextView
+                android:id="@+id/tv_mum_greetings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="Hello Mum"
+                android:textAppearance="@style/h2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_overview"
+                android:layout_width="match_parent"
+                android:layout_height="172dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:elevation="18dp"
+                app:cardCornerRadius="8dp"
+                app:cardMaxElevation="90dp"
+                app:layout_constraintTop_toBottomOf="@id/tv_mum_greetings">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/teal_700">
+
+                    <ImageView
+                        android:id="@+id/im_progress_3d"
+                        android:layout_width="177dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/progress3d" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:text="Child Progress"
+                        android:textAppearance="@style/h3" />
+
+                    <TextView
+                        android:id="@+id/tv_goals_achieve"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_toStartOf="@id/im_progress_3d"
+                        android:text="Goals Complete;"
+                        android:textAppearance="@style/h6" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_goals_achieve"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="60dp"
+                        android:layout_toStartOf="@id/im_progress_3d"
+                        android:text="0"
+                        android:textAppearance="@style/h1"
+                        android:textColor="@color/yellow" />
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <GridLayout
+                android:id="@+id/gridLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:columnCount="2"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:rowCount="4"
+                app:layout_constraintTop_toBottomOf="@id/card_overview">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="162dp"
+                    android:layout_height="156dp"
+                    android:layout_margin="10dp"
+                    android:elevation="18dp"
+                    app:cardCornerRadius="18dp"
+
+                    >
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_goals_achieve"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="20dp"
+                        android:text="0"
+                        android:textAppearance="@style/h1"
+                        android:textColor="@color/yellow" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:layout_marginTop="10dp"
+                        android:text="Diary Entries"
+                        android:textAppearance="@style/h6" />
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="162dp"
+                    android:layout_height="156dp"
+                    android:layout_margin="10dp"
+                    android:elevation="18dp"
+                    app:cardCornerRadius="18dp"
+
+                    >
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_goals_achieve"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="20dp"
+                        android:text="0"
+                        android:textAppearance="@style/h1"
+                        android:textColor="@color/yellow" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:layout_marginTop="10dp"
+                        android:text="Check - ins"
+                        android:textAppearance="@style/h6" />
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="162dp"
+                    android:layout_height="156dp"
+                    android:layout_margin="10dp"
+                    android:elevation="18dp"
+                    app:cardCornerRadius="18dp"
+
+                    >
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_goals_achieve"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="20dp"
+                        android:text="0"
+                        android:textAppearance="@style/h1"
+                        android:textColor="@color/yellow" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:layout_marginTop="10dp"
+                        android:text="Reward Claim "
+                        android:textAppearance="@style/h6" />
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="162dp"
+                    android:layout_height="156dp"
+                    android:layout_margin="10dp"
+                    android:elevation="18dp"
+                    app:cardCornerRadius="18dp"
+
+                    >
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_goals_achieve"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="20dp"
+                        android:text="0"
+                        android:textAppearance="@style/h1"
+                        android:textColor="@color/yellow" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:layout_marginTop="10dp"
+                        android:text="Points  earn"
+                        android:textAppearance="@style/h6" />
+
+
+                </androidx.cardview.widget.CardView>
+
+
+            </GridLayout>
+
+            <TextView
+                android:id="@+id/textView5"
+                style="@style/h6"
+                android:layout_marginTop="20dp"
+                android:layout_width="389dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="20dp"
+                android:text="Recent Checkins"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/gridLayout" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recent_checkins_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                app:layout_constraintTop_toBottomOf="@id/textView5"
+                tools:layout_editor_absoluteX="0dp"
+                tools:listitem="@layout/checkins_list" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</FrameLayout>

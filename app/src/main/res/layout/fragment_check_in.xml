@@ -1,0 +1,99 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/yellow"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Hello Jamal!"
+        android:textAppearance="@style/h2" />
+
+    <ImageView
+        android:id="@+id/checking_emotion_img"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="35dp"
+        android:src="@drawable/helloimg1boy" />
+
+
+    <TextView
+        android:id="@+id/text_view_how_are_you"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/how_are_you"
+        android:textAppearance="@style/h2" />
+
+
+
+
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:id="@+id/emotion_button_container"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:layout_marginEnd="10dp"
+        android:paddingTop="20dp"
+       >
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_happy"
+            android:layout_width="180dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/small_buttons_happy"
+            android:text="😀 Happy"
+            android:textAppearance="@style/button_text" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_angry"
+            android:layout_width="180dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/btn_happy"
+            android:background="@drawable/small_buttons_sad"
+            android:gravity="center"
+            android:text="😀 Angry"
+            android:textAppearance="@style/button_text" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_excited"
+            android:layout_width="180dp"
+            android:layout_height="70dp"
+            android:layout_below="@id/btn_happy"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/small_buttons_excited"
+            android:text="😊 Excited"
+            android:textAppearance="@style/button_text" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_sad"
+            android:layout_width="180dp"
+            android:layout_height="70dp"
+            android:layout_below="@id/btn_angry"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@id/btn_excited"
+            android:background="@drawable/small_buttons_angry"
+            android:text="😭 Sad"
+            android:textAppearance="@style/button_text" />
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>
+
