@@ -42,6 +42,7 @@ class CheckinActivity3 : AppCompatActivity() {
 
 
 
+
         binding.buttonNext.setOnClickListener {
             checkins!!.feelings = binding.emotionalText.text.toString()
             classify(binding.emotionalText.text.toString())
