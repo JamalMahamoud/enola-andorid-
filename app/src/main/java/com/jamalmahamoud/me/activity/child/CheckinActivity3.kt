@@ -37,6 +37,7 @@ class CheckinActivity3 : AppCompatActivity() {
         setContentView(binding.root)
 
 
+
        checkins =  intent.getSerializableExtra("checkins") as Checkins
         client = TextClassificationClient(applicationContext)
 

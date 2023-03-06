@@ -22,8 +22,8 @@ class MainActivity : AppCompatActivity(), NavigationBarView.OnItemSelectedListen
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-//        intent = Intent(this,GetStartedActivity::class.java)
-//        startActivity(intent)
+        intent = Intent(this,GetStartedActivity::class.java)
+        startActivity(intent)
 
         binding.bottomNav.setOnItemSelectedListener(this)
     }

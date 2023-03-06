@@ -35,6 +35,7 @@ class GoalPageActivity : AppCompatActivity() {
 
         buttonOnclickListener()
 
+
     }
 
     private fun buttonOnclickListener() {
